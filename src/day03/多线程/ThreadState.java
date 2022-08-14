@@ -28,11 +28,12 @@ class T3 extends Thread {
             for (int i = 1; i <= 10; i++) {
                 System.out.println("hi " + i);
                 try {
-                    Thread.sleep(1000);
+                    Thread.sleep(500);
                 } catch (InterruptedException e) {
                     throw new RuntimeException(e);
                 }
             }
+            break;
         }
     }
 }
