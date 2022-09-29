@@ -1,6 +1,7 @@
 package day01.ArraryList集合;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @author 朔风
@@ -14,6 +15,8 @@ public class ArrayListDemo03 {
         list.add(new User(3, "jack", 20));
         list.add(new User(2, "bob", 18));
         list.add(new User(1, "lily", 19));
+
+        List list1 = new ArrayList<>();
 
         //排序前
         for (User user : list) {
