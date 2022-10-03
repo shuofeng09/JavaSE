@@ -4,14 +4,14 @@
   <OriginalElement>java.util.List</OriginalElement>
   <nodes>
     <node x="-151.24999999999997" y="59.0">java.lang.Iterable</node>
-    <node x="84.5" y="233.0">java.util.List</node>
-    <node x="258.0" y="326.0">java.util.ArrayList</node>
-    <node x="-239.99999999999997" y="326.0">java.util.HashSet</node>
-    <node x="-400.0" y="326.0">java.util.TreeSet</node>
-    <node x="-74.0" y="326.0">java.util.LinkedList</node>
     <node x="-160.74999999999997" y="140.0">java.util.Collection</node>
-    <node x="-302.0" y="233.0">java.util.Set</node>
+    <node x="-239.99999999999997" y="326.0">java.util.HashSet</node>
+    <node x="-74.0" y="326.0">java.util.LinkedList</node>
+    <node x="-400.0" y="326.0">java.util.TreeSet</node>
     <node x="105.0" y="326.0">java.util.Vector</node>
+    <node x="258.0" y="326.0">java.util.ArrayList</node>
+    <node x="-302.0" y="233.0">java.util.Set</node>
+    <node x="84.5" y="233.0">java.util.List</node>
   </nodes>
   <notes />
   <edges>
@@ -83,17 +83,17 @@
       <point x="-120.75" y="192.0" />
       <point x="-40.0" y="15.5" />
     </edge>
-    <edge source="java.util.LinkedList" target="java.util.Collection" relationship="REALIZATION">
-      <point x="0.0" y="-15.5" />
-      <point x="5.5" y="192.0" />
-      <point x="-40.75" y="192.0" />
-      <point x="40.0" y="15.5" />
-    </edge>
     <edge source="java.util.ArrayList" target="java.util.List" relationship="REALIZATION">
       <point x="0.0" y="-15.5" />
       <point x="333.0" y="285.0" />
       <point x="139.0" y="285.0" />
       <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="java.util.LinkedList" target="java.util.Collection" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="5.5" y="192.0" />
+      <point x="-40.75" y="192.0" />
+      <point x="40.0" y="15.5" />
     </edge>
     <edge source="java.util.Vector" target="java.util.List" relationship="REALIZATION">
       <point x="0.0" y="-15.5" />
@@ -108,8 +108,10 @@
       <point x="0.0" y="15.5" />
     </edge>
   </edges>
-  <settings layout="Hierarchic" zoom="1.1871980676328502" showDependencies="false" x="14.0" y="218.0" />
-  <SelectedNodes />
+  <settings layout="Hierarchic" zoom="1.1871980676328502" showDependencies="false" x="193.41403865717194" y="270.6449643947101" />
+  <SelectedNodes>
+    <node>java.util.List</node>
+  </SelectedNodes>
   <Categories />
   <SCOPE>All</SCOPE>
   <VISIBILITY>private</VISIBILITY>
