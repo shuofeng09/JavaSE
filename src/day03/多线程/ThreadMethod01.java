@@ -1,7 +1,5 @@
 package day03.多线程;
 
-import javafx.beans.binding.StringBinding;
-
 import java.util.ArrayList;
 import java.util.Iterator;
 
