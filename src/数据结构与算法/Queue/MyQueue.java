@@ -38,9 +38,8 @@ public class MyQueue {
      * 出队操作
      *
      * @return
-     * @throws Exception
      */
-    public int deQueue() throws Exception {
+    public int deQueue() {
 
         // 接收队头元素
         int ele = array[front];
@@ -51,7 +50,7 @@ public class MyQueue {
 
     // 输出队列情况
     public void output() {
-        for (int i = front; i!=rear; i = (i+1)%array.length) {
+        for (int i = front; i != rear; i = (i + 1) % array.length) {
             System.out.print(array[i] + " ");
         }
     }
@@ -64,7 +63,8 @@ public class MyQueue {
         myQueue.enQueue(3);
         myQueue.enQueue(4);
 
-        myQueue.deQueue();
+        System.out.println(myQueue.deQueue());
+        System.out.println(myQueue.deQueue());
 
         myQueue.output();
     }
