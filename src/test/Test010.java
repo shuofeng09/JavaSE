@@ -1,8 +1,6 @@
 package test;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 /**
  * @author 朔风
@@ -11,21 +9,16 @@ import java.util.List;
 @SuppressWarnings("")
 public class Test010 {
     public static void main(String[] args) {
-        int[] arr = new int[1];
-        System.out.println(val());
-        for (; ;) {
-        }
+
+        String o = args[0];
+        String name;
+        String defaultS = "为空";
+
+        name = Objects.requireNonNullElse(o, defaultS);
+        System.out.println(name);
+
+
     }
 
-    public static int val() {
-        int num = 5;
-        try {
-            num = num / 0;
-        } catch (Exception e) {
-            num = 10;
-        } finally {
-            num = 15;
-        }
-        return num;
-    }
+
 }
