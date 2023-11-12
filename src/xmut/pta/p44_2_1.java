@@ -1,6 +1,4 @@
-package xmut.homework;
-
-import org.junit.Test;
+package xmut.pta;
 
 import java.util.Scanner;
 

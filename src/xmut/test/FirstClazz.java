@@ -9,21 +9,15 @@ public class FirstClazz {
 
 
     public static void main(String[] args) {
-        System.out.println(c);
-        System.out.println('\u0000');
-        if (c == '\u0000') {
-            System.out.println("yes");
-        }
-        int y = 2;
-        int z = 3;
-        int n = 4;
+        boolean a = false;
+        boolean b = true;
+        boolean c = (a && b) && (!b);
+        boolean result = (a & b) & (!b);
+        System.out.println(c +""+result);
 
-        System.out.println(n + -y * z / n);
-
-        int a = 2;
-        int b = 3;
-        System.out.println(a % b * 4 % b);
-
+        String adfa = "adfa";
+        adfa += "ad";
+        int adf='a';
 
     }
 
