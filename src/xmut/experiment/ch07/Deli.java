@@ -24,7 +24,6 @@ public class Deli {
 
         Scanner sc = new Scanner(System.in);
         DecimalFormat fmt = new DecimalFormat();
-        NumberFormat money = new NumberFormat();
 
     }
 }
