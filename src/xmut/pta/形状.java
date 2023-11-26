@@ -37,10 +37,10 @@ public class 形状 {
     }
 }
 
-class Circle {
+class Circle1 {
     private int radius;
 
-    public Circle(int radius) {
+    public Circle1(int radius) {
         this.radius = radius;
     }
 
@@ -68,11 +68,11 @@ class Circle {
     }
 }
 
-class Rectangle {
+class Rectangle1 {
     private int width;
     private int length;
 
-    public Rectangle( int width,int length) {
+    public Rectangle1(int width, int length) {
         this.width = width;
         this.length = length;
     }

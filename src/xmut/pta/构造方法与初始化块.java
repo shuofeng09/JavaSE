@@ -9,16 +9,16 @@ public class 构造方法与初始化块 {
         Scanner sc = new Scanner(System.in);
         while (sc.hasNextLine()) {
             int n = Integer.parseInt(sc.nextLine());
-            List<Person> list = new ArrayList<>();
+            List<Person1> list = new ArrayList<>();
 
             for (int i = 0; i < n; i++) {
                 String[] infos = sc.nextLine().split("\\s+");
-                list.add(new Person(infos[0], Integer.parseInt(infos[1]), Boolean.parseBoolean(infos[2])));
+                list.add(new Person1(infos[0], Integer.parseInt(infos[1]), Boolean.parseBoolean(infos[2])));
 
             }
 
             list.stream().sorted((o1, o2) -> -1).forEach(System.out::println);
-            Person person = new Person();
+            Person1 person = new Person1();
             System.out.println(person);
         }
     }

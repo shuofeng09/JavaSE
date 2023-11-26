@@ -2,7 +2,7 @@ package xmut.pta;
 
 import java.util.*;
 
-class Person {
+class Person1 {
     private String name;
     private int age;
     private boolean gender;
@@ -20,12 +20,12 @@ class Person {
         System.out.println("This is static initialization block");
     }
 
-    public Person() {
+    public Person1() {
         System.out.println("This is constructor");
         System.out.println(name + "," + age + "," + gender + "," + id);
     }
 
-    public Person(String name, int age, boolean gender) {
+    public Person1(String name, int age, boolean gender) {
         this.name = name;
         this.age = age;
         this.gender = gender;
@@ -79,16 +79,16 @@ public class 构造方法与toString {
         Scanner sc = new Scanner(System.in);
         while (sc.hasNextLine()) {
             int n = Integer.parseInt(sc.nextLine());
-            List<Person> list = new ArrayList<>();
+            List<Person1> list = new ArrayList<>();
 
             for (int i = 0; i < n; i++) {
                 String[] infos = sc.nextLine().split("\\s+");
-                list.add(new Person(infos[0], Integer.parseInt(infos[1]), Boolean.parseBoolean(infos[2])));
+                list.add(new Person1(infos[0], Integer.parseInt(infos[1]), Boolean.parseBoolean(infos[2])));
 
             }
 
             list.stream().sorted((o1, o2) -> -1).forEach(System.out::println);
-            Person person = new Person();
+            Person1 person = new Person1();
             System.out.println(person);
         }
     }
