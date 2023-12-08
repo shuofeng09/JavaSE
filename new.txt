@@ -1,0 +1,6 @@
+#written by FileProperties
+#Tue Oct 04 15:43:20 CST 2022
+day=12
+age=18
+name=jack
+sex=man
