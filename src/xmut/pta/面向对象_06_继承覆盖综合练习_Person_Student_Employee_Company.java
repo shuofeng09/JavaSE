@@ -1,10 +1,7 @@
 package xmut.pta;
 
 import java.text.DecimalFormat;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
-import java.util.Scanner;
+import java.util.*;
 import java.util.stream.Collectors;
 
 /**
@@ -17,7 +14,7 @@ public class 面向对象_06_继承覆盖综合练习_Person_Student_Employee_Co
         List<Person> personList = new ArrayList<>();
         List<Student> stuList = new ArrayList<Student>();
         List<Employee> empList = new ArrayList<Employee>();
-        while (true) {
+        while (sc.hasNextLine()) {
             String line = sc.nextLine();
             String[] split = line.split("\\s+");
             if (split[0].equals("s"))
@@ -25,21 +22,18 @@ public class 面向对象_06_继承覆盖综合练习_Person_Student_Employee_Co
             else if (split[0].equals("e")) {
                 personList.add(new Employee(split[1], Integer.parseInt(split[2]), Boolean.parseBoolean(split[3]), Double.parseDouble(split[4]), new Company(split[5])));
             } else {
+                personList.sort((o1, o2) -> {
+                    if (o1.name.compareTo(o2.name) == 0)
+                        return o1.age - o2.age;
+                    else
+                        return o1.name.compareTo(o2.name);
+                });
                 break;
             }
-            personList = personList.stream()
-                    .sorted(((o1, o2) -> {
-                        if (o1.name.compareTo(o2.name) != 0) {
-                            return o1.name.compareTo(o2.name);
-                        } else {
-                            return Integer.compare(o1.age, o2.age);
-                        }
-                    }))
-                    .collect(Collectors.toList());
         }
 
-        String line2 = sc.next();
-        if ("exit".equals(line2)) {
+
+        if ("exit".equals(sc.nextLine())) {
             return;
         }
         personList.forEach(System.out::println);
@@ -192,7 +186,7 @@ class Employee extends Person {
         DecimalFormat df = new DecimalFormat("#.#");
         String s1 = df.format(this.salary);
         String s2 = df.format(employee.salary);
-        return s2.equals(s1) && Objects.equals(company, employee.company);
+        return s1.compareTo(s2) == 0 && Objects.equals(company, employee.company);
     }
 
     @Override
