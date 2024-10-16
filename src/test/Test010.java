@@ -14,8 +14,6 @@ public class Test010 {
         String name;
         String defaultS = "为空";
 
-        name = Objects.requireNonNullElse(o, defaultS);
-        System.out.println(name);
 
 
     }

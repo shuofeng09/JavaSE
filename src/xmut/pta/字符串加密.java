@@ -12,6 +12,8 @@ public class 字符串加密 {
         while (in.hasNextLine()) {
             String plaintext = in.nextLine();
             String key = in.nextLine();
+            in.next();
+
 
             char[] keys = key.toCharArray();
             char[] chars = plaintext.toCharArray();
